@@ -14,4 +14,17 @@ The CDK portion of things is made up of a single stack called `BackendStack`. Th
 
 ## Frontend Stack Overview
 
-The NextJS side of things is much simpler. The heart of this app is the `frontend/amplifyConfig.ts`
+The NextJS side of things is much simpler. The heart of this app is the `frontend/amplifyConfig.ts`. This file shows the credentials needed by using real values (now destroyed).
+
+After configuring Amplify as shown in the `frontend/pages/_app.tsx` file, the `Authenticator` component is used in the `frontend/pages/index.tsx` file.
+
+```tsx
+<Authenticator socialProviders={['google']}>
+	{({ signOut, user }) => (
+		<main>
+			<h1>Hello {user?.username}</h1>
+			<button onClick={signOut}>Sign out</button>
+		</main>
+	)}
+</Authenticator>
+```

@@ -1,0 +1,16 @@
+{
+	"name": "google-auth-fullstack",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"workspaces": [
+		"frontend",
+		"backend"
+	],
+	"scripts": {
+		"test": "echo \"lol...you're funny!\""
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC"
+}

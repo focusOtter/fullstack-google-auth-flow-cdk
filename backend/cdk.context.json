@@ -1,0 +1,12 @@
+{
+	"appName": "google-auth-example",
+	"auth": {
+		"google": {
+			"clientSecret": "GoogleClientSecret",
+			"clientId": "721811598969-2r3o75jkvboj7ioh7m29d91qh26b56ih.apps.googleusercontent.com",
+			"callbackUrls": ["http://localhost:3000/"],
+			"logoutUrls": ["http://localhost:3000/"]
+		},
+		"userpoolDomainPrefix": "cdk-demo-domain-for-allen"
+	}
+}

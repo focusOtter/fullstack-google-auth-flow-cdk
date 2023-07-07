@@ -1,0 +1,10 @@
+{
+  "BackendStackForAllen": {
+    "UserPoolId": "us-east-1_Vgqcn7ROT",
+    "AuthorizedRedirectUserPoolDomainURL": "https://cdk-demo-domain-for-allen.auth.us-east-1.amazoncognito.com/oauth2/idpresponse",
+    "Region": "us-east-1",
+    "IdentityPoolId": "us-east-1:f88ded90-2274-44fa-97fb-92ea44a25b68",
+    "UserPoolWebClient": "5lp5hfma18alo03fc663e5mkde",
+    "UserPoolDomainUrl": "https://cdk-demo-domain-for-allen.auth.us-east-1.amazoncognito.com"
+  }
+}

@@ -44,9 +44,11 @@ export function createGoogleAuth(scope: Construct, context: CDKContext) {
 
 	// create a google identity provider.
 	// when users sign up with google, they will be added to the userpool
-	const googleSecretValue = new Secret(scope, 'GoogleClientSecret', {
-		secretName: context.auth.google.clientSecret,
-	})
+	const googleSecretValue = Secret.fromSecretNameV2(
+		scope,
+		'GoogleClientSecret',
+		context.auth.google.clientSecret
+	)
 
 	const googleProvider = new awsCognito.UserPoolIdentityProviderGoogle(
 		scope,
